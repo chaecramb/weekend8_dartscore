@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Darts Scoreboard</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form id="players-form">
+    <label for="player-1">Player 1</label>
+    <input id="player-1" type="text"></input>
+    <label for="player-2">Player 2</label>
+    <input id="player-2" type="text"></input>
+    <input type='submit' value='Start'>
+  </form>
+  <div id='score-board'>
+    <div id='left-side'>
+      <form id="left-score-input">
+        <label for="left-score">Score</label>
+        <input id="left-score" type="text"></input>
+        <input id='left-submit' type='submit' value='Enter'>
+      </form>
+      <ul id="player1-score">
+        <li id='player1-heading'></li>
+        <li>501</li>
+      </ul>
+    </div>
+    <div id='right-side'>
+      <form id="right-score-input">
+        <label for="right-score">Score</label>
+        <input id="right-score" type="text"></input>
+        <input id='right-submit' type='submit' value='Enter'>
+      </form>
+      <ul id="player2-score">
+        <li id='player2-heading'></li>
+        <li>501</li>
+      </ul>
+    </div>
+  </div>
+  <div id='winner'></div>
+
+ 
+  <script src="jquery-1.11.3.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
